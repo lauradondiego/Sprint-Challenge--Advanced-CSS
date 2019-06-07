@@ -1,5 +1,6 @@
 // Home Content
 
+
 .home {
 
   .intro {
@@ -24,6 +25,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @desktop{
+
+      }
     }
   }
 
@@ -45,6 +50,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @desktop{}
 
     .walk-text {
       width: 50%;
@@ -57,8 +63,17 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      .btn button {
+        .btn (@porcelain, @btn-bg-color);
+    border-radius: 10px;
+    width: 25%;
+    padding: 12px 12px;
+    font-size: 12px;
+    @mixin."font-family";
+    @media @desktop {
+      font-family: river-bend;
+    }
+    
     }
 
     .walk-img {
