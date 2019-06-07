@@ -162,23 +162,26 @@ p {
 }
 .nav-bar {
   display: flex;
+  flex-direction: column;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
-  justify-content: center;
+  align-items: center;
+  border: red;
 }
-.nav-bar h1 {
+.nav-bar nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-bar nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #22283B;
+  margin: 26px;
+}
+h1 {
   color: #22283B;
   font-size: 32px;
-}
-.nav-bar h1 nav {
-  color: #22283B;
-  font-size: 16px;
-  flex-direction: column;
-}
-.nav-bar h1 nav a {
-  color: #22283B;
-  text-decoration: none;
 }
 footer {
   color: #22283B;
@@ -190,62 +193,58 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
+.intro h2 {
   padding: 15px;
 }
-.home .intro p {
+.intro p {
   padding: 0 15px;
 }
-.home .space-images {
+.space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
+.space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn button {
-  color: #F6F7F8;
-  background-color: #22283A;
-  border-radius: 10px;
-  width: 25%;
-  padding: 12px 12px;
-  font-size: 12px;
-  @mixin ."font-family";
+@media "(max-width: 800px)" {
+  .walk {
+    font-family: river-bend;
+  }
 }
-.home .walk .walk-img {
+.walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
