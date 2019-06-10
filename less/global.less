@@ -10,6 +10,13 @@ html {
 html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
+
+  @media @desktop {
+    font-size: 1.8rem;
+  }
+  @media @mobile {
+    font-size: 2rem;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -34,5 +41,9 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+
+  @media @desktop {
+    font-size: 1.8rem;
+  }
 }
 

@@ -1,10 +1,11 @@
 // Mixins Here
 
-.btn (@color, @background-color){
+@mixin .btn(@porcelain, @btn-bg-color) {
     color: @porcelain;
     background-color: @btn-bg-color;
 }
 
-.font-family (@nav-font) {
-    font-family: @river-bend;
+@mixin .font(@main-font-color, @font-family) {
+    color: @main-font-color;
+    font-family: @font-family;
 }
