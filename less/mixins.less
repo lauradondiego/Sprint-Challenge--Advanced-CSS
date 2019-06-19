@@ -1,11 +1,15 @@
 // Mixins Here
 
-@mixin .btn(@porcelain, @btn-bg-color) {
-    color: @porcelain;
-    background-color: @btn-bg-color;
+.btn(@color, @background) {
+    color: @color;
+    background-color: @background;
 }
 
-@mixin .font(@main-font-color, @font-family) {
+.font() {
     color: @main-font-color;
-    font-family: @font-family;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+.marginTop(@margin-top) {
+    margin-top: @margin-top;
 }

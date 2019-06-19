@@ -8,28 +8,30 @@
   padding: 20px 0;
   border: 1px double #e0e0e0;
   align-items: center;
-  border: red;
-
-  @media @desktop {
-    font-size: 1.8rem;
-  }
-
+  // border: red;
 
   nav {
     // border-color: red;
     // border: 1px solid red;
     display: flex;
     justify-content: space-evenly;
+    padding: 10px 0 0 0;
   
     a {
       text-decoration: none;
       font-size: 2rem;
       color: #22283B;
-      margin: 26px;
+      margin: 10px;
+      @media @phone {
+        flex-basis: auto;
+        flex-grow: 2;
+        // color: red;
+        // border: 1px solid green;
+        // font-size: 1rem;
+      }
     }
   }
 }
-
 
     h1 {
        color: #22283B;
